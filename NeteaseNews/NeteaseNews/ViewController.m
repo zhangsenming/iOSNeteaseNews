@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CZHeadLine.h"
+#import "CZLoopView.h"
 
 @interface ViewController ()
 
@@ -21,6 +22,10 @@
     } andFailure:^(NSError *error) {
         
     }];
+    
+    CZLoopView *loop = [[CZLoopView alloc] init];
+    loop.frame = self.view.bounds;
+    [self.view addSubview:loop];
 }
 
 @end

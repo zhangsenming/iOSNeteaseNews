@@ -16,7 +16,7 @@
 /**
  *  头条图片
  */
-@property (nonatomic, copy) NSString *imgSrc;
+@property (nonatomic, copy) NSString *imgsrc;
 
 + (instancetype)headLineWithDict:(NSDictionary *)dict;
 

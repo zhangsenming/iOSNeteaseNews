@@ -17,6 +17,10 @@
 		7B89AC0C1CBF958900A43931 /* NeteaseNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B89AC0B1CBF958900A43931 /* NeteaseNewsUITests.m */; };
 		7BFA7C481CC1D2B7000D3A85 /* CZNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA7C461CC1D2B7000D3A85 /* CZNetworkTool.m */; };
 		7BFA7C4D1CC1D2F8000D3A85 /* CZHeadLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA7C4C1CC1D2F8000D3A85 /* CZHeadLine.m */; };
+		7BFA7C511CC1E1BB000D3A85 /* CZLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA7C501CC1E1BB000D3A85 /* CZLoopView.m */; };
+		7BFA7C541CC1E475000D3A85 /* CZLoopViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA7C531CC1E475000D3A85 /* CZLoopViewCell.m */; };
+		7BFA7C571CC1E50E000D3A85 /* CZLoopViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA7C561CC1E50E000D3A85 /* CZLoopViewFlowLayout.m */; };
+		7BFA7C5C1CC1EB56000D3A85 /* CZHeadLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA7C5B1CC1EB56000D3A85 /* CZHeadLineViewController.m */; };
 		BFF030E44D03E6CA1D7BEFC2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8D3AF100A0098A1CD060D5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +63,14 @@
 		7BFA7C471CC1D2B7000D3A85 /* CZNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZNetworkTool.h; sourceTree = "<group>"; };
 		7BFA7C4B1CC1D2F8000D3A85 /* CZHeadLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZHeadLine.h; sourceTree = "<group>"; };
 		7BFA7C4C1CC1D2F8000D3A85 /* CZHeadLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZHeadLine.m; sourceTree = "<group>"; };
+		7BFA7C4F1CC1E1BB000D3A85 /* CZLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZLoopView.h; sourceTree = "<group>"; };
+		7BFA7C501CC1E1BB000D3A85 /* CZLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZLoopView.m; sourceTree = "<group>"; };
+		7BFA7C521CC1E475000D3A85 /* CZLoopViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZLoopViewCell.h; sourceTree = "<group>"; };
+		7BFA7C531CC1E475000D3A85 /* CZLoopViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZLoopViewCell.m; sourceTree = "<group>"; };
+		7BFA7C551CC1E50E000D3A85 /* CZLoopViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZLoopViewFlowLayout.h; sourceTree = "<group>"; };
+		7BFA7C561CC1E50E000D3A85 /* CZLoopViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZLoopViewFlowLayout.m; sourceTree = "<group>"; };
+		7BFA7C5A1CC1EB56000D3A85 /* CZHeadLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZHeadLineViewController.h; sourceTree = "<group>"; };
+		7BFA7C5B1CC1EB56000D3A85 /* CZHeadLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZHeadLineViewController.m; sourceTree = "<group>"; };
 		9F8D3AF100A0098A1CD060D5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC9BB73EE1E6EB483ABB4D7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +186,8 @@
 		7BFA7C441CC1D253000D3A85 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				7BFA7C581CC1EB0A000D3A85 /* Controller */,
+				7BFA7C4E1CC1DF91000D3A85 /* LoopView */,
 				7BFA7C491CC1D2CF000D3A85 /* Model */,
 				7BFA7C451CC1D259000D3A85 /* Tool */,
 			);
@@ -202,6 +216,36 @@
 			children = (
 				7BFA7C4B1CC1D2F8000D3A85 /* CZHeadLine.h */,
 				7BFA7C4C1CC1D2F8000D3A85 /* CZHeadLine.m */,
+			);
+			name = HeadLine;
+			sourceTree = "<group>";
+		};
+		7BFA7C4E1CC1DF91000D3A85 /* LoopView */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA7C4F1CC1E1BB000D3A85 /* CZLoopView.h */,
+				7BFA7C501CC1E1BB000D3A85 /* CZLoopView.m */,
+				7BFA7C521CC1E475000D3A85 /* CZLoopViewCell.h */,
+				7BFA7C531CC1E475000D3A85 /* CZLoopViewCell.m */,
+				7BFA7C551CC1E50E000D3A85 /* CZLoopViewFlowLayout.h */,
+				7BFA7C561CC1E50E000D3A85 /* CZLoopViewFlowLayout.m */,
+			);
+			name = LoopView;
+			sourceTree = "<group>";
+		};
+		7BFA7C581CC1EB0A000D3A85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA7C591CC1EB14000D3A85 /* HeadLine */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7BFA7C591CC1EB14000D3A85 /* HeadLine */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA7C5A1CC1EB56000D3A85 /* CZHeadLineViewController.h */,
+				7BFA7C5B1CC1EB56000D3A85 /* CZHeadLineViewController.m */,
 			);
 			name = HeadLine;
 			sourceTree = "<group>";
@@ -399,6 +443,10 @@
 				7BFA7C4D1CC1D2F8000D3A85 /* CZHeadLine.m in Sources */,
 				7B89ABEE1CBF958900A43931 /* ViewController.m in Sources */,
 				7B89ABEB1CBF958900A43931 /* AppDelegate.m in Sources */,
+				7BFA7C5C1CC1EB56000D3A85 /* CZHeadLineViewController.m in Sources */,
+				7BFA7C541CC1E475000D3A85 /* CZLoopViewCell.m in Sources */,
+				7BFA7C511CC1E1BB000D3A85 /* CZLoopView.m in Sources */,
+				7BFA7C571CC1E50E000D3A85 /* CZLoopViewFlowLayout.m in Sources */,
 				7B89ABE81CBF958900A43931 /* main.m in Sources */,
 				7BFA7C481CC1D2B7000D3A85 /* CZNetworkTool.m in Sources */,
 			);
