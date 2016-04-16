@@ -15,6 +15,9 @@
 		7B89ABF61CBF958900A43931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B89ABF41CBF958900A43931 /* LaunchScreen.storyboard */; };
 		7B89AC011CBF958900A43931 /* NeteaseNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B89AC001CBF958900A43931 /* NeteaseNewsTests.m */; };
 		7B89AC0C1CBF958900A43931 /* NeteaseNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B89AC0B1CBF958900A43931 /* NeteaseNewsUITests.m */; };
+		7BFA7C481CC1D2B7000D3A85 /* CZNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA7C461CC1D2B7000D3A85 /* CZNetworkTool.m */; };
+		7BFA7C4D1CC1D2F8000D3A85 /* CZHeadLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA7C4C1CC1D2F8000D3A85 /* CZHeadLine.m */; };
+		BFF030E44D03E6CA1D7BEFC2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8D3AF100A0098A1CD060D5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F7F80FE39046B5AEF1EC982 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7B89ABE31CBF958900A43931 /* NeteaseNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeteaseNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B89ABE71CBF958900A43931 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7B89ABE91CBF958900A43931 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,12 @@
 		7B89AC071CBF958900A43931 /* NeteaseNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeteaseNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B89AC0B1CBF958900A43931 /* NeteaseNewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NeteaseNewsUITests.m; sourceTree = "<group>"; };
 		7B89AC0D1CBF958900A43931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BFA7C461CC1D2B7000D3A85 /* CZNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZNetworkTool.m; sourceTree = "<group>"; };
+		7BFA7C471CC1D2B7000D3A85 /* CZNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZNetworkTool.h; sourceTree = "<group>"; };
+		7BFA7C4B1CC1D2F8000D3A85 /* CZHeadLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZHeadLine.h; sourceTree = "<group>"; };
+		7BFA7C4C1CC1D2F8000D3A85 /* CZHeadLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZHeadLine.m; sourceTree = "<group>"; };
+		9F8D3AF100A0098A1CD060D5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC9BB73EE1E6EB483ABB4D7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF030E44D03E6CA1D7BEFC2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C1CEFBD8262C1B11EBFB1BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFC9BB73EE1E6EB483ABB4D7 /* Pods.debug.xcconfig */,
+				4F7F80FE39046B5AEF1EC982 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7B89ABDA1CBF958900A43931 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +105,8 @@
 				7B89ABFF1CBF958900A43931 /* NeteaseNewsTests */,
 				7B89AC0A1CBF958900A43931 /* NeteaseNewsUITests */,
 				7B89ABE41CBF958900A43931 /* Products */,
+				0C1CEFBD8262C1B11EBFB1BC /* Pods */,
+				FDA977BB4702D6B38A91BCC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +123,7 @@
 		7B89ABE51CBF958900A43931 /* NeteaseNews */ = {
 			isa = PBXGroup;
 			children = (
+				7BFA7C431CC1D253000D3A85 /* Classes */,
 				7B89ABE91CBF958900A43931 /* AppDelegate.h */,
 				7B89ABEA1CBF958900A43931 /* AppDelegate.m */,
 				7B89ABEC1CBF958900A43931 /* ViewController.h */,
@@ -140,6 +163,57 @@
 			path = NeteaseNewsUITests;
 			sourceTree = "<group>";
 		};
+		7BFA7C431CC1D253000D3A85 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA7C441CC1D253000D3A85 /* News */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7BFA7C441CC1D253000D3A85 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA7C491CC1D2CF000D3A85 /* Model */,
+				7BFA7C451CC1D259000D3A85 /* Tool */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		7BFA7C451CC1D259000D3A85 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA7C461CC1D2B7000D3A85 /* CZNetworkTool.m */,
+				7BFA7C471CC1D2B7000D3A85 /* CZNetworkTool.h */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		7BFA7C491CC1D2CF000D3A85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA7C4A1CC1D2D5000D3A85 /* HeadLine */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7BFA7C4A1CC1D2D5000D3A85 /* HeadLine */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA7C4B1CC1D2F8000D3A85 /* CZHeadLine.h */,
+				7BFA7C4C1CC1D2F8000D3A85 /* CZHeadLine.m */,
+			);
+			name = HeadLine;
+			sourceTree = "<group>";
+		};
+		FDA977BB4702D6B38A91BCC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F8D3AF100A0098A1CD060D5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B89AC101CBF958900A43931 /* Build configuration list for PBXNativeTarget "NeteaseNews" */;
 			buildPhases = (
+				0E75C918F5BFE8107421C81F /* Check Pods Manifest.lock */,
 				7B89ABDF1CBF958900A43931 /* Sources */,
 				7B89ABE01CBF958900A43931 /* Frameworks */,
 				7B89ABE11CBF958900A43931 /* Resources */,
+				F17404080481884B5910D97B /* Embed Pods Frameworks */,
+				6E6627348F6B5ADCDB5C5644 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +279,7 @@
 		7B89ABDB1CBF958900A43931 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CZ;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = sonmin;
 				TargetAttributes = {
@@ -265,14 +343,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E75C918F5BFE8107421C81F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E6627348F6B5ADCDB5C5644 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F17404080481884B5910D97B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B89ABDF1CBF958900A43931 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFA7C4D1CC1D2F8000D3A85 /* CZHeadLine.m in Sources */,
 				7B89ABEE1CBF958900A43931 /* ViewController.m in Sources */,
 				7B89ABEB1CBF958900A43931 /* AppDelegate.m in Sources */,
 				7B89ABE81CBF958900A43931 /* main.m in Sources */,
+				7BFA7C481CC1D2B7000D3A85 /* CZNetworkTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,9 +539,11 @@
 		};
 		7B89AC111CBF958900A43931 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFC9BB73EE1E6EB483ABB4D7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NeteaseNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.sonmin.NeteaseNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,9 +552,11 @@
 		};
 		7B89AC121CBF958900A43931 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F7F80FE39046B5AEF1EC982 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NeteaseNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.sonmin.NeteaseNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +630,7 @@
 				7B89AC121CBF958900A43931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B89AC131CBF958900A43931 /* Build configuration list for PBXNativeTarget "NeteaseNewsTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +639,7 @@
 				7B89AC151CBF958900A43931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B89AC161CBF958900A43931 /* Build configuration list for PBXNativeTarget "NeteaseNewsUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +648,7 @@
 				7B89AC181CBF958900A43931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

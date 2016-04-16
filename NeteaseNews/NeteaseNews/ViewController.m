@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CZHeadLine.h"
 
 @interface ViewController ()
 
@@ -15,13 +16,11 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.  
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [CZHeadLine headlinesWithSuccess:^(NSArray *headLines) {
+        NSLog(@"headlines ----%@",headLines);
+    } andFailure:^(NSError *error) {
+        
+    }];
 }
 
 @end
