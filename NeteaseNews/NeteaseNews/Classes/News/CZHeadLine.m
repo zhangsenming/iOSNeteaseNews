@@ -35,7 +35,7 @@
             //字典转模型
             CZHeadLine *headLine = [CZHeadLine headLineWithDict:dict];
             //添加模型到数组
-            [arrayM addObject:headLine];
+            [arrayM addObject:headLine];  
         }
         //将结果传递给调用方法
         success(arrayM.copy);
